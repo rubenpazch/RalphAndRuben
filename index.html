@@ -5,19 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-  <title>Document</title>
+  <title>Technical Documentation</title>
+
+  <style>
+  @media only screen and (max-width: 815px) {
+      /* For mobile phones: */
+    #navbar ul{
+    border:1px solid;
+      height:207px;
+    }
+      #navbar{
+        background-color:white;
+        position:absolute;
+        top:0;
+        padding:0;
+        margin: 0;
+        width:100%;
+        max-height:275px;
+        border:none;
+        z-index:1;
+        border-bottom:2px solid;
+      }
+    #main-doc{
+      position: relative;
+      margin-left:0px;
+      margin-top:270px;
+    }
+    #main-doc section {
+  /*     padding-top: 240px; */
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #main-doc{
+      margin-left:-10px;
+    }
+    code{
+      margin-left:-20px;
+      width:100%;
+      padding:15px;
+      padding-left:10px;
+      padding-right:45px;
+      min-width:233px;
+    }
+  }
+  </style>
 </head>
 <body>
   <nav id="navbar">
     <header> Documentation</header>
     <ul>
-       <a href="Introduction"></a>
-      <li><a class="nav-link" href="Introduction">Introduction</a>   </li>
-      <li><a class="nav-link" href="You_should_know">What you should already know</a> </li>
-      <li><a class="nav-link" href="Javascript_and_java">JavaScript and Java</a> </li>
-      <li><a class="nav-link" href="Hello_world">Hello world</a> </li>
-      <li><a class="nav-link" href="Hello_world_2">Hello world 2</a> </li>
-      <li><a class="nav-link" href="Variables">Variables</a> </li>
+      <a href="Introduction"></a>
+      <li><a class="nav-link" href="#Introduction">Introduction</a>   </li>
+      <li><a class="nav-link" href="#You_Should_Know">You Should Know</a> </li>
+      <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a> </li>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a> </li>
+      <li><a class="nav-link" href="#Hello_World_2">Hello World 2</a> </li>
+      <li><a class="nav-link" href="#Variables">Variables</a> </li>
     </ul>
   </nav>
 
@@ -44,8 +87,8 @@
 
       </article>
     </section>
-    <section class="main-section" id="You_should_know">
-      <header>What you should already know</header>
+    <section class="main-section" id="You_Should_Know">
+      <header>You Should Know</header>
       <article>
         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
           Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
@@ -65,7 +108,7 @@
         </li>
       </article>
     </section>
-    <section class="main-section" id="Javascript_and_java">
+    <section class="main-section" id="JavaScript_and_Java">
       <header>JavaScript and Java</header>
       <article>
         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
@@ -86,8 +129,8 @@
         </li>
       </article>
     </section>
-    <section class="main-section" id="Hello_world">
-      <header>Hello world</header>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
       <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
         Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
         environment to provide programmatic control over them.
@@ -106,8 +149,8 @@
       Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
     </article>
   </section>
-  <section class="main-section" id="Hello_world_2">
-    <header>Hello world 2</header>
+  <section class="main-section" id="Hello_World_2">
+    <header>Hello World 2</header>
     <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
       Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
       environment to provide programmatic control over them.</p>
@@ -159,4 +202,5 @@ Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
 
 
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
